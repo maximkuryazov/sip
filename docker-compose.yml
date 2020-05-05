@@ -1,0 +1,26 @@
+# docker-compose.yml
+version: "3"
+services:
+  app:
+    build: .
+    depends_on:
+      - postgres
+    ports:
+      - "3000:3000"
+      - "8080:8080"
+    environment:
+      SIPP: sipp
+      PORT: 3000
+      SOCKET_PORT: 8080
+    command: npm run start  
+    volumes:
+      - .:/usr/src/app
+
+  postgres:
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: docker
+      POSTGRES_DB: postgres

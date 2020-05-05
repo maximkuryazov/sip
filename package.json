@@ -1,0 +1,32 @@
+{
+  "name": "sipp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www",
+    "sweep": "mv *.log logs/"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "connect-multiparty": "^2.2.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~4.1.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.4",
+    "express-session": "^1.17.1",
+    "http-errors": "~1.6.3",
+    "md5": "^2.2.1",
+    "morgan": "~1.9.1",
+    "multer": "^1.4.2",
+    "pg": "^8.0.3",
+    "pug": "2.0.0-beta11",
+    "sequelize": "^5.21.7",
+    "socket.io": "^2.3.0",
+    "socket.io-client": "^2.3.0",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}

@@ -1,0 +1,38 @@
+extends layout
+
+block content
+  span#socketPort #{socketPort}
+  span#expressPort #{port}
+  | User id: 
+  span#authorized #{authorized}
+  h1= title
+  p Welcome to #{title}
+  div#left-part
+    button#start Start XML scenario
+    button#stop Stop
+    button#pause Pause
+    button#resume(disabled) Resume
+    h2 Console:
+    span #{console}
+    div#screen
+  div#right-part
+    button#register Create user
+    button#authorize Authorize
+    form
+      span Количество CPU: 
+      input#cpu(type="number" value="10")
+      br
+      span Адрес сервера: 
+      input#server(type="text" value="10.0.200.66")
+      br
+      span Порт: 
+      input#port(type="text" value="7060")
+      br
+      span Файл со сценарием XML: 
+      input#xml(type="file")
+      br
+      span Файл с данными пользователей: 
+      input#csv(type="file")
+      p
+      | Если файлы сценария и пользователей не переданы, то возьмутся из корня проекта.
+      

@@ -1,0 +1,5 @@
+node_modules
+uac_*
+sipp_reg*
+scripts/*
+logs/*.log

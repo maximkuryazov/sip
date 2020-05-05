@@ -1,0 +1,45 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#screen {
+  width: 500px;
+  height: 500px;
+  overflow-y: scroll;
+}
+
+#left-part {
+  float: left;
+  width: 40%;
+}
+
+#right-part {
+  float: left;
+}
+
+input {
+  display: block;
+  float: right;
+  width: 220px !important;
+  border: 1px solid silver;
+  height: 24px;
+  padding: 4px;
+  margin: 2px;
+  margin-left: 25px;
+}
+input[type="file"] {
+  border: 0;
+}
+
+span {
+  line-height: 40px;
+}
+
+#expressPort, #socketPort {
+  display: none;
+}
